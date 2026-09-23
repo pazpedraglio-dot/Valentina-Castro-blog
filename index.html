@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ortografía Divertida — Valentina</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Ortografía Divertida</h1>
+    <p>Aprende reglas reales, explicadas de forma clara y agradable</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a onclick="mostrarSeccion('portada')">Inicio</a></li>
+        <li><a onclick="mostrarSeccion('abecedario')">Abecedario</a></li>
+        <li><a onclick="mostrarSeccion('b-v')">Uso de B y V</a></li>
+        <li><a onclick="mostrarSeccion('g-j')">Uso de G y J</a></li>
+        <li><a onclick="mostrarSeccion('h')">Uso de la H</a></li>
+        <li><a onclick="mostrarSeccion('ll-y')">LL y Y</a></li>
+        <li><a onclick="mostrarSeccion('mayusculas')">Mayúsculas</a></li>
+        <li><a onclick="mostrarSeccion('ejemplos')">Ejemplos</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <!-- PORTADA -->
+    <div class="card" id="portada">
+        <h2> Explorando entre letras y consejos</h2>
+
+        <p>
+            consejos · estudio · maquillaje · arte · tutoriales · uñas · pestañas · piercings · recetas
+        </p>
+
+        <p>
+            Bienvenido al blog de Valentina, en este blog aprenderás y verás sobre los errores
+            que se pueden llegar a cometer al estudiar ortografía.
+        </p>
+
+        <p>
+            Mi blog se basa en las cosas que me gustan, los trucos de estudio que puedo dar
+            y otras cosas que he llegado a estudiar y aprender fuera del colegio,espero que 
+            guste el blog,byeee.
+        </p>
+    </div>
+
+    <!-- ABECEDARIO -->
+    <div class="card oculto" id="abecedario">
+        <h2>El Abecedario</h2>
+
+        <p>El español tiene 29 letras. Algunas representan un solo sonido y otras varios.</p>
+
+        <ul>
+            <li>La h no suena.</li>
+            <li>La g cambia de sonido según la vocal.</li>
+            <li>La c cambia de sonido según la vocal.</li>
+            <li>La x puede sonar de diferentes formas.</li>
+        </ul>
+
+        <div class="consejo">
+            <h3>Consejo</h3>
+            <p>Aprender bien el orden y la pronunciación de las letras para reconocerlas y utilizarlas correctamente.</p>
+        </div>
+    </div>
+
+    <!-- B Y V -->
+    <div class="card oculto" id="b-v">
+        <h2>Uso de B y V</h2>
+
+        <h3>Se escriben con B:</h3>
+        <ul>
+            <li>Después de M se escribe B.</li>
+            <li>Verbos terminados en -bir.</li>
+            <li>Terminaciones del pasado: -aba, -abas, -ábamos.</li>
+            <li>Palabras con bu-, bur-, bus-.</li>
+        </ul>
+
+        <h3>Se escriben con V:</h3>
+        <ul>
+            <li>Palabras que empiezan con eva-, eve-, evi-, evo-.</li>
+            <li>Adjetivos terminados en -ivo / -iva.</li>
+            <li>Verbos terminados en -olver.</li>
+        </ul>
+
+        <div class="consejo">
+            <h3>Consejo</h3>
+            <p>Memorizar las principales reglas y practicar con palabras que suelen causar confusión, como bello/vello o tubo/tuvo.</p>
+        </div>
+    </div>
+
+    <!-- G Y J -->
+    <div class="card oculto" id="g-j">
+        <h2>Uso de G y J</h2>
+
+        <h3>Se escriben con G:</h3>
+        <ul>
+            <li>Suena suave con a, o, u.</li>
+            <li>Suena fuerte con e, i.</li>
+            <li>Verbos terminados en -ger y -gir.</li>
+        </ul>
+
+        <h3>Se escriben con J:</h3>
+        <ul>
+            <li>Suena fuerte sin importar la vocal.</li>
+            <li>Terminaciones -aje y -eje.</li>
+        </ul>
+
+        <div class="consejo">
+            <h3>Consejo</h3>
+            <p>Aprender cuándo se utiliza cada letra y hacer ejercicios con palabras que tengan sonidos parecidos.</p>
+        </div>
+    </div>
+
+    <!-- H -->
+    <div class="card oculto" id="h">
+        <h2>Uso de la H</h2>
+
+        <ul>
+            <li>La h no suena.</li>
+            <li>Palabras que empiezan con hue-, hie-, hui-.</li>
+            <li>Verbos como haber, hacer, hablar.</li>
+            <li>Palabras que llevan h aunque no se oiga.</li>
+        </ul>
+
+        <div class="consejo">
+            <h3>Consejo</h3>
+            <p>Recordar las palabras que llevan H y practicar escribiéndolas varias veces, ya que la H no se pronuncia.</p>
+        </div>
+    </div>
+
+    <!-- LL Y Y -->
+    <div class="card oculto" id="ll-y">
+        <h2>Uso de LL y Y</h2>
+
+        <h3>Se escriben con LL:</h3>
+        <ul>
+            <li>Palabras terminadas en -illo / -illa.</li>
+            <li>Verbos terminados en -illar, -ullar, -ullir.</li>
+        </ul>
+
+        <h3>Se escriben con Y:</h3>
+        <ul>
+            <li>Terminaciones -ay, -ey, -oy, -uy.</li>
+            <li>Formas verbales terminadas en -yó.</li>
+            <li>Puede funcionar como vocal o consonante.</li>
+        </ul>
+
+        <div class="consejo">
+            <h3>Consejo</h3>
+            <p>Practicar palabras que contengan estas letras y prestar atención a su escritura para evitar confusiones.</p>
+        </div>
+    </div>
+
+    <!-- MAYÚSCULAS -->
+    <div class="card oculto" id="mayusculas">
+        <h2>Uso de Mayúsculas</h2>
+
+        <ul>
+            <li>Se usan al inicio de un texto.</li>
+            <li>Nombres propios.</li>
+            <li>Lugares.</li>
+            <li>Festividades.</li>
+            <li>Títulos de obras.</li>
+        </ul>
+
+        <div class="consejo">
+            <h3>Consejo</h3>
+            <p>Recordar que se utilizan al comenzar una oración, después de un punto y en nombres propios, lugares, instituciones, etc.</p>
+        </div>
+    </div>
+
+    <!-- EJEMPLOS -->
+    <div class="card oculto" id="ejemplos">
+        <h2>Ejemplos Prácticos</h2>
+
+        <h3>B y V</h3>
+        <ul>
+            <li>Escribir → termina en -bir.</li>
+            <li>Evitar → empieza con evi-.</li>
+        </ul>
+
+        <h3>G y J</h3>
+        <ul>
+            <li>Proteger → termina en -ger.</li>
+            <li>Garaje → termina en -aje.</li>
+        </ul>
+
+        <h3>H</h3>
+        <ul>
+            <li>Huevo → empieza con hue-.</li>
+            <li>Hecho → del verbo hacer.</li>
+        </ul>
+
+        <h3>LL y Y</h3>
+        <ul>
+            <li>Costilla → termina en -illa.</li>
+            <li>Estoy → termina en -oy.</li>
+        </ul>
+
+        <h3>Mayúsculas</h3>
+        <ul>
+            <li>Guatemala → nombre propio.</li>
+            <li>La vida es sueño → título de obra.</li>
+        </ul>
+
+        <div class="consejo">
+            <h3>Consejo</h3>
+            <p>Repasar ejemplos reales ayuda a recordar las reglas y evitar errores comunes.</p>
+        </div>
+    </div>
+
+</main>
+
+</body>
+</html>

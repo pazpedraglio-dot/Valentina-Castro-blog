@@ -1,0 +1,380 @@
+/* ================================
+   CONFIGURACIÓN GENERAL
+================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #e8f3ff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+/* ================================
+   ENCABEZADO
+================================ */
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: #a7c7ff;
+    color: #2a3b5f;
+    border-bottom: 3px solid #8fb3ff;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 2.2rem;
+}
+
+header p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+
+/* ================================
+   MENÚ DE NAVEGACIÓN
+================================ */
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #8fb3ff;
+    padding: 10px;
+    margin: 0;
+    gap: 8px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #2a3b5f;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    background: #a7c7ff;
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   CONTENIDO PRINCIPAL
+================================ */
+
+main {
+    width: 100%;
+    padding: 20px 0;
+}
+
+
+/* ================================
+   TARJETAS
+================================ */
+
+.card {
+    background: #ffffff;
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 20px;
+    border: 2px solid #a7c7ff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: opacity 0.3s ease;
+}
+
+.card h2 {
+    color: #4d7bff;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+.card h3 {
+    color: #4d7bff;
+    margin-top: 22px;
+}
+
+.card p {
+    color: #2a3b5f;
+    line-height: 1.7;
+}
+
+.card ul {
+    color: #2a3b5f;
+    line-height: 1.7;
+    padding-left: 25px;
+}
+
+
+/* ================================
+   LISTAS Y TEXTOS
+================================ */
+
+ul {
+    color: #2a3b5f;
+    line-height: 1.6;
+}
+
+p {
+    color: #2a3b5f;
+}
+
+
+/* ================================
+   CONSEJOS
+================================ */
+
+.consejo {
+    background: #dce9ff;
+    padding: 15px 18px;
+    margin-top: 20px;
+    border-left: 5px solid #4d7bff;
+    border-radius: 12px;
+}
+
+.consejo h3 {
+    margin-top: 0;
+}
+
+.consejo p {
+    margin-bottom: 0;
+}
+
+
+/* ================================
+   APRENDER FÁCIL
+================================ */
+
+.facil {
+    background: #eef5ff;
+    padding: 15px 18px;
+    margin-top: 20px;
+    border-left: 5px solid #8fb3ff;
+    border-radius: 12px;
+}
+
+.facil h3 {
+    margin-top: 0;
+}
+
+.facil p {
+    margin-bottom: 0;
+}
+
+
+/* ================================
+   BLOCKQUOTE
+================================ */
+
+blockquote {
+    background: #dce9ff;
+    padding: 10px;
+    border-left: 4px solid #4d7bff;
+    border-radius: 10px;
+    font-style: italic;
+    color: #2a3b5f;
+}
+
+
+/* ================================
+   OCULTAR SECCIONES
+================================ */
+
+.oculto {
+    display: none;
+}
+
+
+/* ================================
+   PORTADA COMO PESTAÑA
+================================ */
+
+.portada {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.portada h2 {
+    font-size: 2rem;
+    color: #4d7bff;
+}
+
+.portada p {
+    font-size: 1.1rem;
+    color: #2a3b5f;
+    margin-bottom: 20px;
+}
+
+
+/* ================================
+   TABLETS
+================================ */
+
+@media (max-width: 900px) {
+
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        padding: 10px;
+        gap: 5px;
+    }
+
+    nav ul li a {
+        padding: 8px 10px;
+        font-size: 0.95rem;
+    }
+
+    .card {
+        width: 90%;
+        padding: 22px;
+    }
+}
+
+
+/* ================================
+   TELÉFONOS
+================================ */
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+        gap: 5px;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+
+    main {
+        padding: 10px 0;
+    }
+
+    .card {
+        width: 94%;
+        margin: 15px auto;
+        padding: 18px;
+        border-radius: 16px;
+    }
+
+    .card h2 {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+
+    .card h3 {
+        font-size: 1.1rem;
+    }
+
+    .card p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .card ul {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        padding-left: 20px;
+    }
+
+    .consejo,
+    .facil {
+        padding: 14px;
+        margin-top: 15px;
+    }
+}
+
+
+/* ================================
+   TELÉFONOS MUY PEQUEÑOS
+================================ */
+
+@media (max-width: 380px) {
+
+    header h1 {
+        font-size: 1.45rem;
+    }
+
+    header p {
+        font-size: 0.85rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+        padding: 9px;
+    }
+
+    .card {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .card h2 {
+        font-size: 1.35rem;
+    }
+
+    .card p,
+    .card ul {
+        font-size: 0.9rem;
+    }
+}
