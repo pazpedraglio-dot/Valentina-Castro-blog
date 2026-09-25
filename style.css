@@ -31,6 +31,18 @@ header {
     border-bottom: 3px solid #8fb3ff;
 }
 
+
+/* LOGO DEL COLEGIO */
+
+.logo-colegio {
+    display: block;
+    width: 180px;
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto 15px;
+}
+
+
 header h1 {
     margin: 0 0 10px;
     font-size: 2.2rem;
@@ -213,7 +225,7 @@ blockquote {
 
 
 /* ================================
-   PORTADA COMO PESTAÑA
+   PORTADA
 ================================ */
 
 .portada {
@@ -276,6 +288,11 @@ blockquote {
 
     header {
         padding: 25px 15px;
+    }
+
+    .logo-colegio {
+        width: 140px;
+        max-width: 70%;
     }
 
     header h1 {
@@ -357,6 +374,10 @@ blockquote {
 
     header p {
         font-size: 0.85rem;
+    }
+
+    .logo-colegio {
+        width: 120px;
     }
 
     nav ul li a {
